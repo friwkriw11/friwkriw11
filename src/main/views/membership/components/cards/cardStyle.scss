@@ -1,0 +1,60 @@
+@import '../../../../../assets/constants/helpers/helper.scss';
+
+.card-container {
+    background: $white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.24);
+    border-radius: 12px;
+    padding-bottom: 64px;
+    padding-top: 32px;
+
+    hr{
+        color: $subtle_primary;
+    }
+    .summery {
+        background-color: $subtle_primary;
+        
+        padding: 24px;
+        
+
+        .label, hr{
+            color: $text_fields_labels_color;
+        }
+        .dashed{
+            margin-top: 16px;
+            margin-left: 13px;
+            border: none;
+            height: 1px;
+            background: $text_fields_labels_color;
+            background: repeating-linear-gradient(90deg,$text_fields_labels_color,$text_fields_labels_color 6px,transparent 6px,transparent 12px);            
+        }
+
+        h3{
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            color: $black;
+            text-align: right !important;
+        }
+
+       
+    }
+
+    .success-payment{
+
+        h1{
+            color: $primary_blue;
+        }
+
+       
+    }
+    
+    .total-paid p{
+        color: $text_fields_labels_color;
+    }
+
+   
+}

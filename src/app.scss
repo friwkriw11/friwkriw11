@@ -1,0 +1,94 @@
+@import './assets/constants/helpers/helper.scss';
+
+* {
+    font-family: 'Montserrat' sans-serif !important;
+    font-style: normal;
+}
+body{
+  background-color: $background_color;
+}
+.Container{
+ flex: 3.5;
+   background-color: $background_color;
+   flex-basis:400px;
+ }
+
+ .forFlex{
+  flex: 1;
+ }
+
+input , textarea ,select{
+    background-color: $text_field_color;
+    padding: 16px 0px 16px 16px;
+    border-radius: 8px;
+    
+  }
+
+  input:focus { 
+    
+    border-color: $black;
+   
+ }
+ select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  background-image: none;
+  cursor: pointer;
+}
+
+.modal_overlay {
+  position: fixed ;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 1.5px;
+  right: 1.5px;
+  padding: 16px 20px 10px 20px;
+  background-color: $text_fields_arrow_square;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
+
+  height: 53px;
+  border-radius: 0px 8px 8px 0px;
+  overflow: hidden;
+
+
+}
+
+ ::-webkit-calendar-picker-indicator {
+  background-color: $text_fields_arrow_square;
+ 
+  padding: 20px;
+ 
+  cursor: pointer;
+}
+
+  ::placeholder{
+    color: $text_fields_place_holder ;
+  }
+  label{
+    color: $text_fields_labels_color;
+  }
+

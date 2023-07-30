@@ -1,0 +1,131 @@
+@import '../../../../../../assets/constants/helpers/helper.scss';
+
+
+.btn-add-staff {
+    width: 189px;
+    height: 80px;
+    display: flex;
+    background-color: $primary_blue;
+    color: $white;
+    border-radius: 8px;
+    border: 0px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.adons {
+    z-index: 9999;
+    position: relative;
+    top: -44px;
+    left: 288px;
+}
+
+.p-image {
+    background-color: $background_color;
+}
+
+.upload-button {
+
+    .upload-img {
+        background-color: $background_color;
+        color: $black;
+        display: flex;
+        border-radius: 8px;
+        padding: 16px 12px 16px 24px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .change-uploaded-img {
+
+        span {
+            display: none;
+        }
+
+        background-color: $background_color;
+        padding: 12px 24px;
+        border-radius: 8px;
+        transform: all 0.9s ease-out;
+
+        &:hover {
+            span {
+                display: block;
+                animation: fadeIn 0.5s ease-in-out;
+
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-80px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+
+                color: $black;
+            }
+
+            width: 161px !important;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .delete-img {
+        background-color: $red-error;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+
+        transform: all 0.3s ease-out;
+
+        span {
+            display: none;
+        }
+
+        &:hover {
+            animation: all 0.9s ease-in-out;
+
+            span {
+                display: block;
+                transform: all 5s ease-out;
+                animation: fadeIn 0.5s ease-in-out;
+
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-80px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+
+                color: $white;
+            }
+
+            width: 161px !important;
+            align-items: center;
+            display: flex;
+
+        }
+
+    }
+}
+
+.text-h1 {
+    color: $primary_blue;
+}
+
+.btn-prev {
+    color: $primary_blue !important;
+    font-size: 24px;
+    font-weight: 500;
+}

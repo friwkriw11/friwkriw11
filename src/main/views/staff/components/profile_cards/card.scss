@@ -1,0 +1,36 @@
+@import '../../../../../assets/constants/helpers/helper.scss';
+
+.cardContainer{
+
+    background-color: $subtle_primary;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.24);
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    .role_possition{
+        color: $mid-gray;
+    }
+    .button_show {
+        .sh_button {
+        border-radius: 8px;
+        color: $primary_blue;
+        border: solid 2px $primary_blue;
+        
+    }
+
+   
+
+    }
+    .options{
+        cursor: pointer;
+        .dropdown{
+            background-color: $background_color;
+            border-radius: 8px;
+            padding: 14px;
+
+            .delete-text{
+                color: $red-error;
+            }
+        }
+    }
+}

@@ -1,0 +1,237 @@
+@import '../../../../../../assets/constants/helpers/helper.scss';
+
+
+
+.md-stepper-horizontal {
+  display: table;
+  margin: 0 auto;
+  height: 64px;
+
+  background-color: $background_color;
+}
+
+.md-stepper-horizontal .md-step {
+  display: table-cell;
+  position: relative;
+  overflow: hidden;
+}
+
+.md-stepper-horizontal .md-step:hover,
+.md-stepper-horizontal .md-step:active {
+  background-color: rgba(0, 0, 0, 0.04);
+
+}
+
+.md-stepper-horizontal .md-step:active {
+  border-radius: 15% / 75%;
+}
+
+.md-stepper-horizontal .md-step:first-child:active {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.md-stepper-horizontal .md-step:last-child:active {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.md-stepper-horizontal .md-step:first-child .md-step-bar-left,
+.md-stepper-horizontal .md-step:last-child .md-step-bar-right {
+  display: none;
+}
+
+.md-stepper-horizontal .md-step .md-step-circle {
+
+  margin: 0 auto;
+  background-color: $subtle_primary;
+  border-radius: 50%;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  margin-right: 58px;
+  margin-left: 58px;
+
+}
+
+.md-stepper-horizontal .md-step.done .md-step-circle,
+.md-stepper-horizontal .md-step.active .md-step-circle {
+  background-color: $primary_blue;
+
+}
+
+
+
+.md-stepper-horizontal .md-step .md-step-circle.active-circle {
+  margin-top: 32px;
+  height: 48px;
+  width: 48px;
+}
+
+
+
+.md-stepper-horizontal .md-step .md-step-circle.inactive {
+  margin-top: -72px;
+}
+
+
+.md-stepper-horizontal .md-step.editable .md-step-circle {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+.md-stepper-horizontal .md-step .md-step-title {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.md-stepper-horizontal .md-step .md-step-title {
+  text-align: center;
+  color: $primary_blue;
+}
+
+.md-stepper-horizontal .md-step.active .md-step-title {
+  font-weight: 600;
+  color: $primary_blue;
+}
+
+.md-stepper-horizontal .md-step .md-step-title span {
+  display: none;
+}
+
+.md-stepper-horizontal .md-step.active .md-step-title span {
+  font-weight: 600;
+  display: block;
+}
+
+
+.md-stepper-horizontal .md-step .md-step-bar-left,
+.md-stepper-horizontal .md-step .md-step-bar-right {
+  position: absolute;
+  top: 56px;
+  border-top: 2px solid $subtle_primary;
+}
+
+.md-stepper-horizontal .md-step.active .md-step-bar-right {
+  margin-left: 24px;
+}
+
+.md-stepper-horizontal .md-step.active .md-step-bar-left,
+.md-stepper-horizontal .md-step.done .md-step-bar-left,
+.md-stepper-horizontal .md-step.done .md-step-bar-right {
+
+  border-top: 8px solid $primary_blue;
+  margin-top: -2px;
+}
+
+.md-stepper-horizontal .md-step .md-step-bar-right {
+  right: 0;
+  left: 50%;
+
+
+
+}
+
+.md-stepper-horizontal .md-step .md-step-bar-left {
+  left: 0;
+  right: 50%;
+
+
+
+}
+
+input:checked {
+  background-color: #22c55e;
+  /* bg-green-500 */
+}
+
+input:checked~span:last-child {
+  --tw-translate-x: 32px;
+  /* translate-x-7 */
+
+}
+
+.spinner {
+
+  position: absolute;
+  background: $text_fields_arrow_square;
+  width: 36px;
+  height: 54px;
+  margin-top: 31px;
+  margin-left: 74px;
+  overflow: hidden;
+
+  border-radius: 0px 8px 8px 0px;
+}
+
+.button {
+  position: relative;
+  color: #000000;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  display: block;
+  margin-left: 12px;
+}
+
+
+
+.up {
+  transform: rotate(-90deg);
+  top: -.5rem;
+  right: 5px;
+
+}
+
+.down {
+  transform: rotate(-90deg);
+  top: -2rem;
+  right: 5px;
+}
+
+.s_custom_workouts {
+
+ 
+  .custom_workouts_err {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='rgb(232,39,39)' stroke-width='4' stroke-dasharray='12' stroke-dashoffset='18' stroke-linecap='square'/%3e%3c/svg%3e");
+
+  }
+
+  .custom_workouts_no_err {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='black' stroke-width='4' stroke-dasharray='12' stroke-dashoffset='18' stroke-linecap='square'/%3e%3c/svg%3e");
+    margin-bottom: 24px;
+
+  }
+
+  .custom_workouts {
+    width: 502px;
+    max-height: 196px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 8px 16px 16px 16px;
+    
+
+    border-radius: 8px;
+
+    .chips{
+      margin-top: 8px;
+    }
+    .hide{
+      display: none;
+    }
+
+    .show{
+      display: block;
+    }
+
+    .checkedChip{
+      background-color: $primary_blue !important;
+      color: $white !important;
+    }
+  }
+}

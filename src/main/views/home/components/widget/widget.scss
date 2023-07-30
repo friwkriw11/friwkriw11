@@ -1,0 +1,46 @@
+@import '../../../../../assets/constants/helpers/helper.scss';
+
+.widget{
+  display: flex;
+  flex:1;
+  height: 100px;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #969696;
+  border-radius:10px;
+
+  .left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title{
+        font-weight: bold;
+        font-size: 14px;
+        color: #000;
+    }
+    .counter{
+
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .link{
+        width: max-content;
+        font-size: 12px;
+        border-bottom: 1px solid black;
+    }
+
+    .percentage{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    .icon{
+        font-size: 18px;
+        padding: 5px;
+        background-color: #D9D9D9;
+        border-radius: 5px;
+        align-self: flex-end;
+    }
+  }
+}

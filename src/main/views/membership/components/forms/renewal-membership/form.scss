@@ -1,0 +1,15 @@
+@import '../../../../../../assets/constants/helpers/helper.scss';
+
+
+.form-container {
+    background: $white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.24);
+    border-radius: 12px;
+    padding-bottom: 64px;
+    padding-top: 32px;
+
+    hr{
+        color: $subtle_primary;
+    }
+    
+}
